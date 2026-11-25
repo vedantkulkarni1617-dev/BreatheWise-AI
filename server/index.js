@@ -167,7 +167,7 @@ app.get("/api/air-quality", async (req, res) => {
       records,
     });
   } catch (error) {
-    console.error("Air quality API error:", error.message);
+   console.error("Air quality API error:", error);
 
     res.status(502).json({
       success: false,
